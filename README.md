@@ -19,11 +19,15 @@
 
 Приложение построено на основе гексагональной архитектуры:
 
+![](app_architecture.jpg)
+
 - **Core Domain** - центральная бизнес-логика (backup, storage, scheduler, config)
 - **Ports** - интерфейсы для взаимодействия с внешним миром
 - **Adapters** - реализации портов (handlers, repositories)
 
 ### Слоистая архитектура
+
+![](app_layer_structure.jpg)
 
 1. **Interface Layer** - CLI, Desktop, Web интерфейсы
 2. **API Layer** - REST API, GraphQL, IPC Bridge
